@@ -18,5 +18,32 @@ and interconnected turorials and writings on understanding and
 utilizing artificial intelligence.&lt;/p&gt;
 &lt;p&gt;We aim to be succinct, informationally dense, and actionable.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Mathematical Symbols and Operations</title>
+      <link>https://radiantcuriosity.dev/posts/math-tables/</link>
+      <pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://radiantcuriosity.dev/posts/math-tables/</guid>
+      <description>&lt;p&gt;\begin{table}[ht]
+\renewcommand{\arraystretch}{1.3}
+\centering
+\textbf{Mathematical Symbols and Operations}
+\label{tab:math_symbols}
+\begin{tabular}{llll}
+\toprule
+\textbf{Category} &amp;amp; \textbf{Symbol} &amp;amp; \textbf{Example} &amp;amp; \textbf{LaTeX} \\
+\midrule&lt;/p&gt;
+&lt;p&gt;\multicolumn{4}{l}{\textbf{Greek Letters}} \\
+\midrule
+Alpha &amp;amp; $\alpha$ &amp;amp; $\alpha + \beta = \gamma$ &amp;amp; \verb|\alpha| \\
+Beta &amp;amp; $\beta$ &amp;amp; $f(\beta) = \beta^2$ &amp;amp; \verb|\beta| \\
+Gamma &amp;amp; $\gamma$ &amp;amp; $\Gamma(n) = (n-1)!$ &amp;amp; \verb|\gamma| \\
+Sigma &amp;amp; $\Sigma$ &amp;amp; $\Sigma_{i=1}^n i = \frac{n(n+1)}{2}$ &amp;amp; \verb|\Sigma| \\
+Pi &amp;amp; $\Pi$ &amp;amp; $\Pi_{i=1}^n i = n!$ &amp;amp; \verb|\Pi| \\
+Delta &amp;amp; $\Delta$ &amp;amp; $\Delta x$ — change in $x$ &amp;amp; \verb|\Delta| \\
+Theta &amp;amp; $\theta$ &amp;amp; $\theta = \arctan\left(\frac{y}{x}\right)$ &amp;amp; \verb|\theta| \\
+Lambda &amp;amp; $\lambda$ &amp;amp; $E = \lambda h \nu$ &amp;amp; \verb|\lambda| \\
+Mu &amp;amp; $\mu$ &amp;amp; $\mu$ — the mean &amp;amp; \verb|\mu| \\
+\midrule&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
