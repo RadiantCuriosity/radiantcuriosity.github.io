@@ -2,17 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on RadiantCuriosity</title>
-    <link>https://radiantcuriosity.dev/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on RadiantCuriosity</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://radiantcuriosity.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Gell-Mann Amnesia Effect and LLM-Assisted Programming</title>
+      <link>http://localhost:1313/posts/gell-mann/</link>
+      <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/gell-mann/</guid>
+      <description>&lt;h2 id=&#34;what-is-the-gell-mann-amnesia-effect&#34;&gt;What is the Gell-Mann Amnesia Effect?&lt;/h2&gt;
+&lt;p&gt;The Gell-Mann Amnesia effect was coined by author Michael Crichton,
+who named it after physicist Murray Gell-Mann. The phenomenon
+describes how people critically evaluate media coverage in their area
+of expertise, find it lacking, but then uncritically accept the same
+media&amp;rsquo;s coverage in other domains.&lt;/p&gt;
+&lt;p&gt;As Crichton described it:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You open the newspaper to an article on some subject you know well&amp;hellip;
+You read the article and see the journalist has absolutely no
+understanding of either the facts or the issues. Often, the article is
+so wrong it actually presents the story backward&amp;hellip; Then you turn the
+page to national or international affairs, and read as if the rest of
+the newspaper was somehow more accurate about Palestine than the
+baloney you just read.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Introduction to RadiantCuriosity</title>
-      <link>https://radiantcuriosity.dev/posts/introduction/</link>
+      <link>http://localhost:1313/posts/introduction/</link>
       <pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://radiantcuriosity.dev/posts/introduction/</guid>
+      <guid>http://localhost:1313/posts/introduction/</guid>
       <description>&lt;p&gt;Hello, welcome to RadiantCuriosity, a conglomeration of interesting
 and interconnected turorials and writings on understanding and
 utilizing artificial intelligence.&lt;/p&gt;
@@ -20,11 +41,11 @@ utilizing artificial intelligence.&lt;/p&gt;
     </item>
     <item>
       <title>Mathematical Symbols and Operations</title>
-      <link>https://radiantcuriosity.dev/posts/math-tables/</link>
+      <link>http://localhost:1313/posts/math-tables/</link>
       <pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://radiantcuriosity.dev/posts/math-tables/</guid>
+      <guid>http://localhost:1313/posts/math-tables/</guid>
       <description>&lt;figure&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;https://radiantcuriosity.dev/images/math-table.png&#34;/&gt; 
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/math-table.png&#34;/&gt; 
 &lt;/figure&gt;</description>
     </item>
   </channel>
