@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>The Gell-Mann Amnesia Effect and LLM-Assisted Programming | RadiantCuriosity</title>
+<meta name="keywords" content="">
+<meta name="description" content="What is the Gell-Mann Amnesia Effect?
+The Gell-Mann Amnesia effect was coined by author Michael Crichton,
+who named it after physicist Murray Gell-Mann. The phenomenon
+describes how people critically evaluate media coverage in their area
+of expertise, find it lacking, but then uncritically accept the same
+media&rsquo;s coverage in other domains.
+As Crichton described it:
+
+You open the newspaper to an article on some subject you know well&hellip;
+You read the article and see the journalist has absolutely no
+understanding of either the facts or the issues. Often, the article is
+so wrong it actually presents the story backward&hellip; Then you turn the
+page to national or international affairs, and read as if the rest of
+the newspaper was somehow more accurate about Palestine than the
+baloney you just read.">
+<meta name="author" content="">
+<link rel="canonical" href="https://radiantcuriosity.dev/posts/gell-mann/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://radiantcuriosity.dev/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://radiantcuriosity.dev/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://radiantcuriosity.dev/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://radiantcuriosity.dev/apple-touch-icon.png">
+<link rel="mask-icon" href="https://radiantcuriosity.dev/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://radiantcuriosity.dev/posts/gell-mann/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://radiantcuriosity.dev/posts/gell-mann/">
+  <meta property="og:site_name" content="RadiantCuriosity">
+  <meta property="og:title" content="The Gell-Mann Amnesia Effect and LLM-Assisted Programming">
+  <meta property="og:description" content="What is the Gell-Mann Amnesia Effect? The Gell-Mann Amnesia effect was coined by author Michael Crichton, who named it after physicist Murray Gell-Mann. The phenomenon describes how people critically evaluate media coverage in their area of expertise, find it lacking, but then uncritically accept the same media’s coverage in other domains.
+As Crichton described it:
+You open the newspaper to an article on some subject you know well… You read the article and see the journalist has absolutely no understanding of either the facts or the issues. Often, the article is so wrong it actually presents the story backward… Then you turn the page to national or international affairs, and read as if the rest of the newspaper was somehow more accurate about Palestine than the baloney you just read.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-24T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-02-24T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Gell-Mann Amnesia Effect and LLM-Assisted Programming">
+<meta name="twitter:description" content="What is the Gell-Mann Amnesia Effect?
+The Gell-Mann Amnesia effect was coined by author Michael Crichton,
+who named it after physicist Murray Gell-Mann. The phenomenon
+describes how people critically evaluate media coverage in their area
+of expertise, find it lacking, but then uncritically accept the same
+media&rsquo;s coverage in other domains.
+As Crichton described it:
+
+You open the newspaper to an article on some subject you know well&hellip;
+You read the article and see the journalist has absolutely no
+understanding of either the facts or the issues. Often, the article is
+so wrong it actually presents the story backward&hellip; Then you turn the
+page to national or international affairs, and read as if the rest of
+the newspaper was somehow more accurate about Palestine than the
+baloney you just read.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://radiantcuriosity.dev/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "The Gell-Mann Amnesia Effect and LLM-Assisted Programming",
+      "item": "https://radiantcuriosity.dev/posts/gell-mann/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The Gell-Mann Amnesia Effect and LLM-Assisted Programming",
+  "name": "The Gell-Mann Amnesia Effect and LLM-Assisted Programming",
+  "description": "What is the Gell-Mann Amnesia Effect? The Gell-Mann Amnesia effect was coined by author Michael Crichton, who named it after physicist Murray Gell-Mann. The phenomenon describes how people critically evaluate media coverage in their area of expertise, find it lacking, but then uncritically accept the same media\u0026rsquo;s coverage in other domains.\nAs Crichton described it:\nYou open the newspaper to an article on some subject you know well\u0026hellip; You read the article and see the journalist has absolutely no understanding of either the facts or the issues. Often, the article is so wrong it actually presents the story backward\u0026hellip; Then you turn the page to national or international affairs, and read as if the rest of the newspaper was somehow more accurate about Palestine than the baloney you just read.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "What is the Gell-Mann Amnesia Effect? The Gell-Mann Amnesia effect was coined by author Michael Crichton, who named it after physicist Murray Gell-Mann. The phenomenon describes how people critically evaluate media coverage in their area of expertise, find it lacking, but then uncritically accept the same media’s coverage in other domains.\nAs Crichton described it:\nYou open the newspaper to an article on some subject you know well… You read the article and see the journalist has absolutely no understanding of either the facts or the issues. Often, the article is so wrong it actually presents the story backward… Then you turn the page to national or international affairs, and read as if the rest of the newspaper was somehow more accurate about Palestine than the baloney you just read.\nThe LLM-Assisted Programming Trap This effect has a striking parallel with how many novice programmers interact with Large Language Models (LLMs) like ChatGPT, Claude, or GitHub Copilot:\nThe Cycle of Trust and Selective Skepticism Domain-Specific Skepticism: When an experienced programmer receives LLM output in their specialty area (say, React development), they quickly spot hallucinations, outdated patterns, or security vulnerabilities. They exercise appropriate skepticism.\nUnwarranted Trust: That same programmer might then ask the LLM about an unfamiliar domain (like Rust memory management or machine learning algorithms) and uncritically accept the output as authoritative, forgetting their previous encounter with the model’s limitations.\nAmplified for Beginners: This effect is dramatically amplified for programming novices who lack the knowledge base to critically evaluate LLM outputs in any domain.\nWhy This Is Particularly Problematic for Neophyte Programmers New programmers using LLMs as coding partners face several specific challenges:\nInability to Verify: Without sufficient background knowledge, beginners cannot distinguish between correct, suboptimal, and outright incorrect code suggestions.\nConfidence Illusion: LLMs deliver code with the same confident tone regardless of accuracy, creating a false sense of authority.\nLearning Interference: Incorrect patterns can become ingrained before the programmer develops the skill to identify them, creating bad habits that are difficult to unlearn.\nDependence Formation: Beginners may develop an over-reliance on AI assistance, hampering their ability to think through problems independently.\nShallow Understanding: Copy-pasting LLM solutions without comprehension leads to a fragile knowledge base that doesn’t support deeper learning.\nPractical Implications The implications of this effect are significant:\nSecurity Vulnerabilities: Uncritically implemented LLM code may contain security flaws that novices aren’t equipped to detect.\nTechnical Debt: Code that “works” but is implemented poorly creates maintenance issues that become apparent only later.\nFalse Confidence: Beginners may overestimate their competence based on their ability to “solve” problems with AI assistance.\nConceptual Gaps: Fundamental concepts may be missed when learning is driven by AI-generated solutions rather than understanding principles.\nBreaking the Cycle To counter this effect, beginners should:\nTreat All LLM Output with Equal Skepticism: Apply the same critical eye to unfamiliar domains as to familiar ones. Verify Everything: Use multiple sources to confirm information before implementing. Ask for Explanations: Request that the LLM explain its code line by line to aid comprehension. Seek Human Review: Have experienced developers review AI-assisted code. Build Core Knowledge: Focus on understanding fundamentals before relying on AI assistance. The Gell-Mann Amnesia effect serves as an important cautionary framework for understanding how we inconsistently evaluate information sources—whether they’re newspapers or AI coding assistants—and reminds us that skepticism should be applied universally, not selectively.\n",
+  "wordCount" : "556",
+  "inLanguage": "en",
+  "datePublished": "2025-02-24T00:00:00Z",
+  "dateModified": "2025-02-24T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://radiantcuriosity.dev/posts/gell-mann/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "RadiantCuriosity",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://radiantcuriosity.dev/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://radiantcuriosity.dev/" accesskey="h" title="RadiantCuriosity (Alt + H)">RadiantCuriosity</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      The Gell-Mann Amnesia Effect and LLM-Assisted Programming
+    </h1>
+    <div class="post-meta"><span title='2025-02-24 00:00:00 +0000 UTC'>February 24, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="what-is-the-gell-mann-amnesia-effect">What is the Gell-Mann Amnesia Effect?<a hidden class="anchor" aria-hidden="true" href="#what-is-the-gell-mann-amnesia-effect">#</a></h2>
+<p>The Gell-Mann Amnesia effect was coined by author Michael Crichton,
+who named it after physicist Murray Gell-Mann. The phenomenon
+describes how people critically evaluate media coverage in their area
+of expertise, find it lacking, but then uncritically accept the same
+media&rsquo;s coverage in other domains.</p>
+<p>As Crichton described it:</p>
+<blockquote>
+<p>You open the newspaper to an article on some subject you know well&hellip;
+You read the article and see the journalist has absolutely no
+understanding of either the facts or the issues. Often, the article is
+so wrong it actually presents the story backward&hellip; Then you turn the
+page to national or international affairs, and read as if the rest of
+the newspaper was somehow more accurate about Palestine than the
+baloney you just read.</p></blockquote>
+<h2 id="the-llm-assisted-programming-trap">The LLM-Assisted Programming Trap<a hidden class="anchor" aria-hidden="true" href="#the-llm-assisted-programming-trap">#</a></h2>
+<p>This effect has a striking parallel with how many novice programmers
+interact with Large Language Models (LLMs) like ChatGPT, Claude, or
+GitHub Copilot:</p>
+<h3 id="the-cycle-of-trust-and-selective-skepticism">The Cycle of Trust and Selective Skepticism<a hidden class="anchor" aria-hidden="true" href="#the-cycle-of-trust-and-selective-skepticism">#</a></h3>
+<ol>
+<li>
+<p><strong>Domain-Specific Skepticism</strong>: When an experienced programmer receives
+LLM output in their specialty area (say, React development), they
+quickly spot hallucinations, outdated patterns, or security
+vulnerabilities. They exercise appropriate skepticism.</p>
+</li>
+<li>
+<p><strong>Unwarranted Trust</strong>: That same programmer might then ask the LLM
+about an unfamiliar domain (like Rust memory management or machine
+learning algorithms) and uncritically accept the output as
+authoritative, forgetting their previous encounter with the model&rsquo;s
+limitations.</p>
+</li>
+<li>
+<p><strong>Amplified for Beginners</strong>: This effect is dramatically amplified for
+programming novices who lack the knowledge base to critically
+evaluate LLM outputs in any domain.</p>
+</li>
+</ol>
+<h2 id="why-this-is-particularly-problematic-for-neophyte-programmers">Why This Is Particularly Problematic for Neophyte Programmers<a hidden class="anchor" aria-hidden="true" href="#why-this-is-particularly-problematic-for-neophyte-programmers">#</a></h2>
+<p>New programmers using LLMs as coding partners face several specific
+challenges:</p>
+<ul>
+<li>
+<p><strong>Inability to Verify</strong>: Without sufficient background knowledge,
+beginners cannot distinguish between correct, suboptimal, and
+outright incorrect code suggestions.</p>
+</li>
+<li>
+<p><strong>Confidence Illusion</strong>: LLMs deliver code with the same confident tone
+regardless of accuracy, creating a false sense of authority.</p>
+</li>
+<li>
+<p><strong>Learning Interference</strong>: Incorrect patterns can become ingrained
+before the programmer develops the skill to identify them, creating
+bad habits that are difficult to unlearn.</p>
+</li>
+<li>
+<p><strong>Dependence Formation</strong>: Beginners may develop an over-reliance on AI
+assistance, hampering their ability to think through problems
+independently.</p>
+</li>
+<li>
+<p><strong>Shallow Understanding</strong>: Copy-pasting LLM solutions without
+comprehension leads to a fragile knowledge base that doesn&rsquo;t support
+deeper learning.</p>
+</li>
+</ul>
+<h2 id="practical-implications">Practical Implications<a hidden class="anchor" aria-hidden="true" href="#practical-implications">#</a></h2>
+<p>The implications of this effect are significant:</p>
+<ul>
+<li>
+<p><strong>Security Vulnerabilities</strong>: Uncritically implemented LLM code may
+contain security flaws that novices aren&rsquo;t equipped to detect.</p>
+</li>
+<li>
+<p><strong>Technical Debt</strong>: Code that &ldquo;works&rdquo; but is implemented poorly creates
+maintenance issues that become apparent only later.</p>
+</li>
+<li>
+<p><strong>False Confidence</strong>: Beginners may overestimate their competence based
+on their ability to &ldquo;solve&rdquo; problems with AI assistance.</p>
+</li>
+<li>
+<p><strong>Conceptual Gaps</strong>: Fundamental concepts may be missed when learning is
+driven by AI-generated solutions rather than understanding
+principles.</p>
+</li>
+</ul>
+<h2 id="breaking-the-cycle">Breaking the Cycle<a hidden class="anchor" aria-hidden="true" href="#breaking-the-cycle">#</a></h2>
+<p>To counter this effect, beginners should:</p>
+<ul>
+<li><strong>Treat All LLM Output with Equal Skepticism</strong>: Apply the same critical
+eye to unfamiliar domains as to familiar ones.</li>
+<li><strong>Verify Everything</strong>: Use multiple sources to confirm information
+before implementing.</li>
+<li><strong>Ask for Explanations</strong>: Request that the LLM explain its code line by
+line to aid comprehension.</li>
+<li><strong>Seek Human Review</strong>: Have experienced developers review AI-assisted
+code.</li>
+<li><strong>Build Core Knowledge</strong>: Focus on understanding fundamentals before
+relying on AI assistance.</li>
+</ul>
+<p>The Gell-Mann Amnesia effect serves as an important cautionary
+framework for understanding how we inconsistently evaluate information
+sources—whether they&rsquo;re newspapers or AI coding assistants—and reminds
+us that skepticism should be applied universally, not selectively.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://radiantcuriosity.dev/">RadiantCuriosity</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
